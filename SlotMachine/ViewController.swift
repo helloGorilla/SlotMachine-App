@@ -51,7 +51,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         setupContainerViews()
         setupFirstContainer(self.firstContainer)
-        setUpSecondContainer(self.secondContainer)
+        setupSecondContainer(self.secondContainer)
         setupThirdContainer(self.thirdConatiner)
         setupForthContainer(self.forthContainer)
         
@@ -77,7 +77,7 @@ class ViewController: UIViewController {
     
     func spinButtonPressed(button: UIButton) {
         slots = Factory.createSlots()
-        setUpSecondContainer(self.secondContainer)
+        setupSecondContainer(self.secondContainer)
     }
     
     func setupContainerViews() {
@@ -108,7 +108,7 @@ class ViewController: UIViewController {
         containerView.addSubview(self.titleLabel)
     }
     
-    func setUpSecondContainer(containerView: UIView) {
+    func setupSecondContainer(containerView: UIView) {
         for var containerNumber = 0; containerNumber < kNumberOfContainers; containerNumber++ {
             for var slotNumber = 0; slotNumber < kNumberOfSlots; slotNumber++ {
                 var slot:Slot
