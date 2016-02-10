@@ -76,7 +76,7 @@ class ViewController: UIViewController {
     }
     
     func spinButtonPressed(button: UIButton) {
-        slots = Factory.createSlots()
+        slots = Factory.createSlots() 
         setupSecondContainer(self.secondContainer)
     }
     
